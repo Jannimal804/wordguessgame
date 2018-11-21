@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Types of dogs that make up pitbulls</title>
+         </meta>
+    </head>
+<body>
+<h1>Types of dogs that make up pitbulls</h1>
+<h2>Type your guesses and fill in the blanks below.</h2>
+<h2>There are four possible answers.</h2>
+<div id ="answers">
+<h2>Breeds</h2>
+</div>
+<h2>Letters already guessed</h2>
+<h2>Guesses remaining</h2>
+
+<script> 
+ var dogBreeds = ["american pit bull terrier", "american staffordshire terrier", "american bulldog", "staffordshire bull terrier"];
+ //***var word = words[Math.floor(Math.random() * words.length)];
+ //window.onload = function () {
+  
+
+var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
+      'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
+      't', 'u', 'v', 'w', 'x', 'y', 'z']; 
+
+if (true) { // turn code on and off to see what it does
+
+	
+	var dogBreed = "american bulldog";
+
+	// get the guess
+	var guess = prompt("What's your guess?");
+	guess.toLowerCase();
+
+	// print out underscores except for what they gues
+	for (var i = 0; i < dogBreed.length; i++) {
+
+		if (dogBreed.charAt(i) === guess)
+		{
+			document.write(guess);
+		}
+		else if (dogBreed.charAt(i) === " ") // is it a space
+		{
+			document.write(" "); // print out a space, not an underscore
+		}
+		else
+		{
+			document.write("_"); // print out an underscore - they didn't guess this one yet
+		}
+	}
+	document.write("<br>"); // moves to the next line
+}
+
+if (false)
+{
+		var answerDash = []; //number of spaces in word
+		for (var i = 0; i < dogBreeds.length; i++) {
+		 answerDash[i] = "_";
+		}
+
+		// var remainingLetters = dogBreeds.length;
+		//  while (remainingLetters > 0) {
+		//      document.write(answerDash.join(" "));
+		// }
+		 
+
+		var guess = prompt("What's your guess?");
+			guess.toLowerCase();
+		if (guess === null) {  
+			alert("Woof! Please only guess a single letter!");
+		}
+
+		else if (guess.length !== 1) {
+			alert("Woof! Please only guess a single letter!"); 
+		} 
+
+		else {
+			var breed = dogBreeds[0];
+			for (var j = 0; j < breed.length; j++) {
+				 if (guess === breed.charAt(j)) {
+					 console.log(j);
+		//         remainingLetters--;
+				 } 
+			}
+		}
+		//     for (var j = 1; j < dogBreeds.length; j++) {
+		//         if (dogBreeds[j] = guess) {
+		//         remainingLetters--;
+		//          }
+		//     }  
+
+
+		// document.write(answerDash.join(" "));
+		// alert("Woof! You got it! The answer was" + dogBreeds);
+
+		   // alert("Ok," + guess); 
+			//document.write(guess);
+		   // toLowerCase();
+			
+		// var guess2 = prompt("Woof! Guess a letter!");
+		// if (guess2 === null) {
+		 //break;
+		// } 
+		 
+		//else if (guess3 && guess2.length !== 1) {
+		// alert("Woof! Only guess one letter at a time.");
+		//}
+
+		//window.onload = function () {
+		  //  alert("Let's play a guessing game!")
+
+		//Breed One American Pit Bull Terrier 
+		//var str = "American Pit Bull Terrier";
+		//var res = str.split(" ");
+
+		//Breed Two American Staffordshire Terrier 
+		 
+		 //Breed Three American Bulldog 
+
+		 //Breed Four Staffordshire Bull Terrier
+} // if (false)
+</script>
+
+
+
+</body>
+
+</html> 
+
